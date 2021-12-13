@@ -149,7 +149,7 @@ app.post("/listadoacoes", (req, res) => {
     doacaocollection.insertOne(req.body).then(result => {
         console.log(result)
         console.log(req.body)
-        //res.redirect("/listadoacoes")
+        res.redirect("/listadoacoes")
     })
         .catch(error => console.error(error))
 });
